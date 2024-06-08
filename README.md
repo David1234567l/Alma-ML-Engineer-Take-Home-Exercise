@@ -43,7 +43,7 @@ requirements.txt: List of dependencies required for the project.
 ## Setup
 ## 1.) Clone the repository:
 
-git clone [https://github.com/David1234567l/o1a-visa-assessment  ](https://github.com/David1234567l/O1A-visa-assesment)  
+git clone https://github.com/David1234567l/O1A-visa-assesment.git  
 cd o1a-visa-assessment
 ## 2.) Install the dependencies:
 
