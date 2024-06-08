@@ -44,7 +44,7 @@ requirements.txt: List of dependencies required for the project.
 ## 1.) Clone the repository:
 
 git clone https://github.com/David1234567l/O1A-visa-assesment.git  
-cd O1A-visa-assessment
+cd O1A-visa-assesment
 ## 2.) Install the dependencies:
 
 pip install -r requirements.txt
