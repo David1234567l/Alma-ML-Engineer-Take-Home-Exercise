@@ -23,15 +23,14 @@ def extract_info_with_gpt4(content):
 
     extracted_info = {}
     for criterion, prompt in prompts.items():
-        response = openai.Completion.create(
+        response = openai.ChatCompletion.create(
             model="gpt-4",
-            prompt=f"{prompt}\n\nCV:\n{content}",
-            max_tokens=500,
-            n=1,
-            stop=None,
-            temperature=0.5,
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": f"{prompt}\n\nCV:\n{content}"}
+            ]
         )
-        extracted_info[criterion] = response.choices[0].text.strip()
+        extracted_info[criterion] = response['choices'][0]['message']['content'].strip()
     return extracted_info
 
 def assess_qualification(extracted_info):
