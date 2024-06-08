@@ -39,7 +39,7 @@ cd o1a-visa-assessment
 ## 2.) Install the dependencies:
 
 pip install -r requirements.txt
-Set up your OpenAI API key:
+## Set up your OpenAI API key:
 
 ## 3.) Create a .env file in the root directory and add your OpenAI API key:
 OPENAI_API_KEY=your_openai_api_key
