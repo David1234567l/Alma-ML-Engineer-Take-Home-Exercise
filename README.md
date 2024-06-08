@@ -35,7 +35,7 @@ O1a-visa-assessment/
 ## 1.) Clone the repository:
 
 git clone https://github.com/yourusername/o1a-visa-assessment.git 
-\ncd o1a-visa-assessment
+\cd o1a-visa-assessment
 ## 2.) Install the dependencies:
 
 pip install -r requirements.txt
