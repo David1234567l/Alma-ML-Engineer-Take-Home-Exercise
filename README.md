@@ -16,9 +16,9 @@ O1a-visa-assessment/
 │   └── sample_cv.pdf
 ├── README.md
 ├── requirements.txt
-└── .env
+└── .env ``` 
 
-File Descriptions
+## File Descriptions
 main.py: The main entry point of the FastAPI application.
 models.py: Define data models if you need any (e.g., for a database).
 schemas.py: Define Pydantic models for request and response validation.
@@ -26,7 +26,7 @@ utils.py: Utility functions, such as the functions to interact with the OpenAI A
 README.md: Instructions on how to set up and run the application.
 requirements.txt: List of dependencies required for the project.
 .env: Environment variables file to store the OpenAI API key.
- ``` 
+
 <img width="1440" alt="Design Workflow" src="https://github.com/David1234567l/O1A-visa-assesment/assets/35432315/41224e2f-6e62-48de-9da1-52876dcd0a1b">
 
  Explanation:
