@@ -34,24 +34,16 @@ O1a-visa-assessment/
 ## Setup
 ## 1.) Clone the repository:
 
-bash
-Copy code
 git clone https://github.com/yourusername/o1a-visa-assessment.git
 cd o1a-visa-assessment
 ## 2.) Install the dependencies:
 
-bash
-Copy code
 pip install -r requirements.txt
 Set up your OpenAI API key:
 
 ## 3.) Create a .env file in the root directory and add your OpenAI API key:
-plaintext
-Copy code
 OPENAI_API_KEY=your_openai_api_key
 ## 4.) Run the application:
 
-bash
-Copy code
 uvicorn app.main:app --reload
 The API will be available at http://127.0.0.1:8000. 
