@@ -61,4 +61,5 @@ def assess_qualification(extracted_info):
 
     return assessment
 
+
  
