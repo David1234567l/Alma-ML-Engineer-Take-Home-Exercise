@@ -16,7 +16,8 @@ O1a-visa-assessment/
 │   └── sample_cv.pdf
 ├── README.md
 ├── requirements.txt
-└── .env 
+└── .env
+
 File Descriptions
 main.py: The main entry point of the FastAPI application.
 models.py: Define data models if you need any (e.g., for a database).
