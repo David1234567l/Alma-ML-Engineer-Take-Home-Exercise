@@ -40,14 +40,14 @@ def extract_info_with_gpt4(content):
 def assess_qualification(extracted_info):
     assessment = {}
     thresholds = {
-        "Awards": {"low": 0, "medium": 1, "high": 2},
-        "Membership": {"low": 0, "medium": 1, "high": 2},
-        "Press": {"low": 0, "medium": 1, "high": 2},
-        "Judging": {"low": 0, "medium": 1, "high": 2},
-        "Original contribution": {"low": 0, "medium": 1, "high": 2},
-        "Scholarly articles": {"low": 0, "medium": 1, "high": 2},
-        "Critical employment": {"low": 0, "medium": 1, "high": 2},
-        "High remuneration": {"low": 0, "medium": 1, "high": 2},
+        "Awards": {"low": 1, "medium": 2, "high": 3},
+        "Membership": {"low": 1, "medium": 2, "high": 3},
+        "Press": {"low": 1, "medium": 2, "high": 3}},
+        "Judging": {"low": 1, "medium": 2, "high": 3},
+        "Original contribution": {"low": 1, "medium": 2, "high": 3},
+        "Scholarly articles": {"low": 1, "medium": 2, "high": 3},
+        "Critical employment": {"low": 1, "medium": 2, "high": 3},
+        "High remuneration": {"low": 1, "medium": 2, "high": 3},
     }
 
     for criterion, info in extracted_info.items():
