@@ -1,4 +1,11 @@
-# O1a-visa-assessment/  
+# O-1A Visa Assessment
+
+This project provides an API to assess how qualified a person is for an O-1A immigration visa based on their CV.
+
+## Project Structure
+
+```plaintext
+o1a-visa-assessment/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py
