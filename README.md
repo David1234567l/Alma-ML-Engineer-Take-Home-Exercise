@@ -53,7 +53,7 @@ You can upload a CV through the /upload_cv/ endpoint. The API will return a JSON
 ## Create a simple HTML file to upload a CV:
 
 
-<!DOCTYPE html>
+```plaintext <!DOCTYPE html>
 <html>
 <body>
 
@@ -66,3 +66,5 @@ You can upload a CV through the /upload_cv/ endpoint. The API will return a JSON
 
 </body>
 </html>
+
+```
