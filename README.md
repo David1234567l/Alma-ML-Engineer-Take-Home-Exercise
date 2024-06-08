@@ -47,3 +47,22 @@ OPENAI_API_KEY=your_openai_api_key
 
 uvicorn app.main:app --reload
 The API will be available at http://127.0.0.1:8000. 
+## Usage
+You can upload a CV through the /upload_cv/ endpoint. The API will return a JSON response with the assessment results. 
+## Example using a web form:
+## Create a simple HTML file to upload a CV:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Upload CV</h2>
+<form action="http://127.0.0.1:8000/upload_cv/" method="post" enctype="multipart/form-data">
+  <label for="file">Choose CV:</label>
+  <input type="file" id="file" name="file"><br><br>
+  <input type="submit" value="Upload CV">
+</form>
+
+</body>
+</html>
