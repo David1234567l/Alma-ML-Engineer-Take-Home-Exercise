@@ -1,4 +1,4 @@
-# o1a-visa-assessment/ 
+# O1a-visa-assessment 
 ├── app/
 │   ├── __init__.py
 │   ├── main.py
