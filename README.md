@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ## Set up your OpenAI API key:
 
 ## 3.) Create a .env file in the root directory and add your OpenAI API key:
-OPENAI_API_KEY='{your_openai_api_key}'  
+OPENAI_API_KEY='your_openai_api_key'  
 ## 4.) Run the application:
 
 uvicorn app.main:app --reload
