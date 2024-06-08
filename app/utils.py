@@ -3,11 +3,12 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # Load environment variables from .env file
 load_dotenv()
 
 # Set the OpenAI API key
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def process_cv(content):
     extracted_info = extract_info_with_gpt4(content)
