@@ -5,10 +5,8 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# Initialize the OpenAI client
-client = openai.ChatCompletion.create(
-    api_key=os.getenv("OPENAI_API_KEY"),
-)
+# Set the OpenAI API key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def process_cv(content):
     extracted_info = extract_info_with_gpt4(content)
@@ -29,7 +27,7 @@ def extract_info_with_gpt4(content):
 
     extracted_info = {}
     for criterion, prompt in prompts.items():
-        response = client.create(
+        response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
