@@ -34,9 +34,9 @@ def extract_info_with_gpt4(content):
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": f"{prompt}\n\nCV:\n{content}"}
-            ],
+            ]
         )
-        extracted_info[criterion] = response.choices[0].message["content"].strip()
+        extracted_info[criterion] = response['choices'][0]['message']['content'].strip()
     return extracted_info
 
 def assess_qualification(extracted_info):
