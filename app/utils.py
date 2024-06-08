@@ -42,7 +42,7 @@ def assess_qualification(extracted_info):
     thresholds = {
         "Awards": {"low": 1, "medium": 2, "high": 3},
         "Membership": {"low": 1, "medium": 2, "high": 3},
-        "Press": {"low": 1, "medium": 2, "high": 3}},
+        "Press": {"low": 1, "medium": 2, "high": 3},
         "Judging": {"low": 1, "medium": 2, "high": 3},
         "Original contribution": {"low": 1, "medium": 2, "high": 3},
         "Scholarly articles": {"low": 1, "medium": 2, "high": 3},
