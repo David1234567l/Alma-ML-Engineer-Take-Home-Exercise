@@ -1,4 +1,6 @@
-import openai
+from openai import OpenAI
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 import os
 from dotenv import load_dotenv
 
@@ -6,7 +8,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set the OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def process_cv(content):
     extracted_info = extract_info_with_gpt4(content)
@@ -27,13 +28,11 @@ def extract_info_with_gpt4(content):
 
     extracted_info = {}
     for criterion, prompt in prompts.items():
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "user", "content": f"{prompt}\n\nCV:\n{content}"}
-            ]
-        )
+        response = client.chat.completions.create(model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": f"{prompt}\n\nCV:\n{content}"}
+        ])
         extracted_info[criterion] = response.choices[0].message.content.strip()
     return extracted_info
 
@@ -58,6 +57,7 @@ def assess_qualification(extracted_info):
             assessment[criterion] = "medium"
         else:
             assessment[criterion] = "low"
-    
+
     return assessment
+
  
