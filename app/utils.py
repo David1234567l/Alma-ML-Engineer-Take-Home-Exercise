@@ -51,7 +51,7 @@ def assess_qualification(extracted_info):
     }
 
     for criterion, info in extracted_info.items():
-        count = len(info.split('\n'))  # Simplistic way to count relevant entries by counting number of new chunks 
+        count = len(info.split('\n'))  # Simplistic way to count relevant entries by counting number of new chunks       
         if count >= thresholds[criterion]["high"]:
             assessment[criterion] = "high"
         elif count >= thresholds[criterion]["medium"]:
