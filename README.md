@@ -94,7 +94,7 @@ The extracted information is evaluated based on the following O-1A visa criteria
 - Critical Employment 
 - High Remuneration 
 
-Each criterion's information is extracted from the CV using GPT-4. The output should provide clear and concise information for each category.
+Each criterion's information is extracted from the CV using GPT-4. The output should provide clear and concise information for each category.  
 
 ### 2. Assessment
 
