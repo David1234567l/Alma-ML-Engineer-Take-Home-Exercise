@@ -10,6 +10,7 @@ O1a-visa-assessment/
 │   ├── __init__.py
 │   ├── main.py
 │   ├── models.py
+│   ├── test.py
 │   ├── schemas.py
 │   └── utils.py
 ├── data/
@@ -20,7 +21,8 @@ O1a-visa-assessment/
 
 File Descriptions   
 main.py: The main entry point of the FastAPI application. 
-models.py: Define data models (e.g., for a database). 
+models.py: Define data models (e.g., for a database).
+test.py: test   
 schemas.py: Define Pydantic models for request and response validation.
 utils.py: Utility functions, such as the functions to interact with the OpenAI API and to assess qualifications.
 README.md: Instructions on how to set up and run the application. 
