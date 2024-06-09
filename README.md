@@ -80,7 +80,7 @@ curl -X POST "http://127.0.0.1:8000/upload_cv/" -F "file=@/path/to/your/cv.pdf"
 </html>
 
 ```
-## Output  Evaluation 
+## Output (.json format)  
 
 ### 1. Extracted Information
 
@@ -90,9 +90,9 @@ The extracted information is evaluated based on the following O-1A visa criteria
 - Press
 - Judging
 - Original Contribution
-- Scholarly Articles
-- Critical Employment
-- High Remuneration
+- Scholarly Articles 
+- Critical Employment 
+- High Remuneration 
 
 Each criterion's information is extracted from the CV using GPT-4. The output should provide clear and concise information for each category.
 
