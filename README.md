@@ -13,9 +13,9 @@ O1a-visa-assessment/
 │   ├── schemas.py
 │   └── utils.py
 ├── data/
-│   └── the_sample_cv.txt
+│   └── the_sample_cv.txt   
 ├── README.md
-├── requirements.txt
+├── requirements.txt  
 └── .env   
 
 File Descriptions   
