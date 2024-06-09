@@ -33,7 +33,7 @@ upload_cv.html: html web form  for testing
  ``` 
 <img width="1440" alt="Design Workflow" src="https://github.com/David1234567l/O1A-visa-assesment/assets/35432315/41224e2f-6e62-48de-9da1-52876dcd0a1b">   
 
- Explanation:   
+ Explanation:    
  
 1. **User**: The end user interacts with the system by uploading their CV and receiving the assessment results.
 2. **FastAPI Backend**: The main server handling API requests, including receiving the CV and returning results.
