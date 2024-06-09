@@ -29,7 +29,7 @@ utils.py: Utility functions, such as the functions to interact with the OpenAI A
 README.md: Instructions on how to set up and run the application. 
 requirements.txt: List of dependencies required for the project.
 upload_cv.html: html web form  for testing       
-.env: Environment variables file to store the OpenAI API key. 
+.env: Environment variables file to store the OpenAI API key 
  ``` 
 <img width="1440" alt="Design Workflow" src="https://github.com/David1234567l/O1A-visa-assesment/assets/35432315/41224e2f-6e62-48de-9da1-52876dcd0a1b">   
 
