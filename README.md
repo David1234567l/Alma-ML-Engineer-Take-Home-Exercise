@@ -103,5 +103,5 @@ The assessment is evaluated based on predefined thresholds:
 - **Medium:** 2
 - **High:** 3  
 
-The application assigns a qualification level (low, medium, high) based on the number of relevant entries for each criterion. The higher the number of relevant entries, the higher the qualification level.   
+The application assigns a qualification level (low, medium, high) based on the number of relevant entries for each criterion. The higher the number of relevant entries, the higher the qualification level   
  
