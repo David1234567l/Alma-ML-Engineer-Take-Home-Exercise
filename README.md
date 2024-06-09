@@ -84,7 +84,7 @@ curl -X POST "http://127.0.0.1:8000/upload_cv/" -F "file=@/path/to/your/cv.pdf"
 
 ### 1. Extracted Information
 
-The extracted information should be evaluated based on the following O-1A visa criteria:
+The extracted information is evaluated based on the following O-1A visa criteria:
 - Awards
 - Membership
 - Press
@@ -103,4 +103,5 @@ The assessment is evaluated based on predefined thresholds:
 - **Medium:** 2
 - **High:** 3  
 
-The application assigns a qualification level (low, medium, high) based on the number of relevant entries for each criterion. The higher the number of relevant entries, the higher the qualification level.
+The application assigns a qualification level (low, medium, high) based on the number of relevant entries for each criterion. The higher the number of relevant entries, the higher the qualification level.   
+ 
