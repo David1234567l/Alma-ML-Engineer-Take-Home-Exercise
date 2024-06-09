@@ -40,7 +40,7 @@ upload_cv.html: html web form  for testing
 3. **LLM GPT-4**: The language model used for extracting relevant information from the CV
 4. **Database**: Optional storage for processed data and assessment results.
 5. **Extraction Logic**: The logic for extracting information from the CV using the LLM.
-6. **Assessment Logic**: The logic for assessing the extracted information against O-1A criteria.
+6. **Assessment Logic**: The logic for assessing the extracted information against O-1A criteria
 7. **Store Results**: The process of saving the assessment results to the database
 8. **Return Results**: The final step where the system returns the assessment results to the user
 
