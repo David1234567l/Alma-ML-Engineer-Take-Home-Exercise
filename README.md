@@ -2,7 +2,7 @@
 
 This project provides an API to assess how qualified a person is for an O-1A immigration visa based on their CV (.txt format).
 
-## Project Structure
+## Project Structure 
 
 ```plaintext
 O1a-visa-assessment/
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 OPENAI_API_KEY=your_openai_api_key  
 ## 4.) Run the application:
 
-uvicorn app.main:app --reload
+uvicorn app.main:app --reload   
 The API will be available at http://127.0.0.1:8000. 
 ## Usage 
 ## Eample using cURL:  
