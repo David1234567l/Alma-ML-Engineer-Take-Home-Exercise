@@ -44,7 +44,7 @@ upload_cv.html: html web form  for testing
 7. **Store Results**: The process of saving the assessment results to the database.
 8. **Return Results**: The final step where the system returns the assessment results to the user.
 
-## Setup
+## Setup 
 ## 1.) Clone the repository:
 
 git clone https://github.com/David1234567l/O1A-visa-assesment.git  
