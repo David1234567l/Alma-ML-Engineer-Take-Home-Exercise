@@ -60,7 +60,7 @@ The API will be available at http://127.0.0.1:8000
 ## Eample using cURL:  
 You can upload a CV in .txt format through the /upload_cv/ endpoint. The API will return a JSON response with the assessment results.  
 curl -X POST "http://127.0.0.1:8000/upload_cv/" -F "file=@/path/to/your/cv.pdf"
-## Example using a web form:
+## Example using a web form:   
 ## Create a simple HTML file to upload a CV:
 
 
