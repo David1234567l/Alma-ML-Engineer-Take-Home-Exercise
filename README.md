@@ -25,7 +25,7 @@ main.py: The main entry point of the FastAPI application
 models.py: Optional Define data models (e.g., for a database)
 test.py: test 
 schemas.py: Optional: Define Pydantic models for request and response validation.
-utils.py: Utility functions, such as the functions to interact with the OpenAI API and to assess qualifications.
+utils.py: Utility functions, such as the functions to interact with the OpenAI API and to assess qualifications
 README.md: Instructions on how to set up and run the application. 
 requirements.txt: List of dependencies required for the project.
 upload_cv.html: html web form  for testing       
