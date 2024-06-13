@@ -1,6 +1,6 @@
 # O-1A Visa Assessment
 
-This project provides an API to assess how qualified a person is for an O-1A immigration visa based on their CV (.txt format)   
+This project provides an API to assess how qualified a person is for an O-1A immigration visa based on their CV (.txt format or .pdf format)   
 
 ## Project Structure 
 
@@ -62,8 +62,8 @@ uvicorn app.main:app --reload
 The API will be available at http://127.0.0.1:8000 
 ## Usage 
 ## Eample using cURL:  
-You can upload a CV in .txt format through the /upload_cv/ endpoint. The API will return a JSON response with the assessment results.  
-curl -X POST "http://127.0.0.1:8000/upload_cv/" -F "file=@/path/to/your/cv.txt" 
+You can upload a CV in .pdf format or .txt format through the /upload_cv/ endpoint. The API will return a JSON response with the assessment results.  
+ex. curl -X POST "http://127.0.0.1:8000/upload_cv/" -F "file=@/path/to/your/cv.txt"  
 ## Example using a web form:   
 ## Create a simple HTML file to upload a CV
 
