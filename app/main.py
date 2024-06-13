@@ -13,7 +13,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise ValueError("OPENAI_API_KEY environment variable not set")
 
-app = FastAPI()
+app = FastAPI() 
 
 @app.post("/upload_cv/")
 async def upload_cv(file: UploadFile = File(...)):
