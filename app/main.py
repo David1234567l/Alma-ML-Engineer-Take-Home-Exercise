@@ -19,12 +19,12 @@ app = FastAPI()
 async def upload_cv(file: UploadFile = File(...)):
     try:
         content = await file.read()
-        results = process_cv(content.decode('utf-8'))
+        results = process_cv(content, file.content_type)
         # Format the JSON response for readability
         formatted_results = json.dumps(results, indent=4)
         return JSONResponse(content=json.loads(formatted_results))
     except UnicodeDecodeError:
-        raise HTTPException(status_code=400, detail="The uploaded file must be a text file.")
+        raise HTTPException(status_code=400, detail="The uploaded file must be a text or PDF file.")
     except Exception as e:
         # Log the error
         print(f"Error: {e}")
