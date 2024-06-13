@@ -18,7 +18,7 @@ O1a-visa-assessment/
 ├── README.md
 ├── requirements.txt
 ├── .env 
-└── upload_cv.html 
+└── upload_cv.html  
 
 File Descriptions   
 main.py: The main entry point of the FastAPI application 
