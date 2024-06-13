@@ -1,7 +1,9 @@
 from openai import OpenAI
-
+import fitz  # PyMuPDF
+from typing import Union
 import os
 from dotenv import load_dotenv
+
 
 # Load environment variables from .env file
 load_dotenv()
@@ -10,12 +12,23 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def process_cv(content):
+def process_cv(content: Union[str, bytes], file_type: str):
+    if file_type == 'application/pdf':
+        content = extract_text_from_pdf(content)
+    elif isinstance(content, bytes):
+        content = content.decode('utf-8')
     extracted_info = extract_info_with_gpt4(content)
     assessment = assess_qualification(extracted_info)
     return {"extracted_info": extracted_info, "assessment": assessment}
 
-def extract_info_with_gpt4(content):
+def extract_text_from_pdf(pdf_bytes: bytes) -> str:
+    doc = fitz.open(stream=pdf_bytes, filetype="pdf")
+    text = ""
+    for page in doc:
+        text += page.get_text()
+    return text
+
+def extract_info_with_gpt4(content: str):
     prompts = {
         "Awards": "Extract any nationally or internationally recognized awards mentioned in this CV.",
         "Membership": "Extract memberships in associations that require outstanding achievements.",
